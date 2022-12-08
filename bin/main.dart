@@ -5,5 +5,6 @@ void main(List<String> arguments) {
   final factory = Shape(ShapeTypes.triangle);
   factory.area();
 
-
+  // abstract factory app
+  AbstractFactory.createCar(CarType.mercedes);
 }
