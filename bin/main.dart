@@ -16,4 +16,9 @@ void main(List<String> arguments) {
   print('Builder pattern:');
   BuilderApplication.makeBench();
   print('');
+
+  // prototype app
+   print('Prototype pattern:');
+  Prototype.makeFrames();
+   print('');
 }
