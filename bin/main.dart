@@ -18,7 +18,12 @@ void main(List<String> arguments) {
   print('');
 
   // prototype app
-   print('Prototype pattern:');
+  print('Prototype pattern:');
   Prototype.makeFrames();
-   print('');
+  print('');
+
+  // singleton app
+  print('Singleton pattern:');
+  final cache = CachedData();
+  cache.watchData();
 }
