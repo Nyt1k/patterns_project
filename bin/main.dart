@@ -32,4 +32,9 @@ void main(List<String> arguments) {
   print('Adapter pattern:');
   AdapterApp.getAllChecks();
   print('');
+
+  // bridge app
+  print('Bridge pattern:');
+  BridgeApp.loadTheCar();
+  print('');
 }
