@@ -26,4 +26,10 @@ void main(List<String> arguments) {
   print('Singleton pattern:');
   final cache = CachedData();
   cache.watchData();
+  print('');
+
+  // adapter app
+  print('Adapter pattern:');
+  AdapterApp.getAllChecks();
+  print('');
 }
