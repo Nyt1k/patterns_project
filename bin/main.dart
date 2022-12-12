@@ -37,4 +37,9 @@ void main(List<String> arguments) {
   print('Bridge pattern:');
   BridgeApp.loadTheCar();
   print('');
+
+  // composite app
+  print('Bridge pattern:');
+  CompositeApp.makeGroups();
+  print('');
 }

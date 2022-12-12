@@ -5,3 +5,4 @@ export 'prototype_pattern/prototype.dart';
 export 'singleton/singleton.dart';
 export 'adapter_pattern/adapter.dart';
 export 'bridge_pattern/bridge.dart';
+export 'composite_pattern/composite.dart';
