@@ -8,3 +8,4 @@ export 'bridge_pattern/bridge.dart';
 export 'composite_pattern/composite.dart';
 export 'decorator_pattern/decorator.dart';
 export 'facade_pattern/facade.dart';
+export 'flyweight_pattern/flyweight.dart';

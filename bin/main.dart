@@ -52,4 +52,10 @@ void main(List<String> arguments) {
   print('Facade pattern:');
   FacadeApp.makeCar();
   print('');
+
+  //flyweight app
+  print('Flyweight pattern:');
+  FlyWeight.startDrawing();
+  print('');
+
 }
