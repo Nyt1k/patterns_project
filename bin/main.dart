@@ -58,4 +58,8 @@ void main(List<String> arguments) {
   FlyWeight.startDrawing();
   print('');
 
+  //proxy app
+  print('Proxy pattern:');
+  ProxyApp.getSong();
+  print('');
 }
