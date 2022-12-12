@@ -48,4 +48,8 @@ void main(List<String> arguments) {
   DecoratorApp.makePizza();
   print('');
 
+  //facade app
+  print('Facade pattern:');
+  FacadeApp.makeCar();
+  print('');
 }
