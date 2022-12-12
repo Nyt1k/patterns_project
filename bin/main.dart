@@ -42,4 +42,10 @@ void main(List<String> arguments) {
   print('Bridge pattern:');
   CompositeApp.makeGroups();
   print('');
+
+  //decoder app
+  print('Decoder pattern:');
+  DecoratorApp.makePizza();
+  print('');
+
 }
