@@ -12,3 +12,4 @@ export 'decorator_pattern/decorator.dart';
 export 'facade_pattern/facade.dart';
 export 'flyweight_pattern/flyweight.dart';
 export 'proxy_pattern/proxy.dart';
+export 'chain_of_responsibility_pattern/chain_of_responsibility.dart';

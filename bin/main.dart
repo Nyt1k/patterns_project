@@ -62,4 +62,9 @@ void main(List<String> arguments) {
   print('Proxy pattern:');
   ProxyApp.getSong();
   print('');
+
+  //chain of responsibility app
+  print('Chain of responsibility pattern:');
+  ChainOfResponsibilityApp.experimentWithFood();
+  print('');
 }
