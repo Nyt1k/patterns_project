@@ -67,4 +67,9 @@ void main(List<String> arguments) {
   print('Chain of responsibility pattern:');
   ChainOfResponsibilityApp.experimentWithFood();
   print('');
+
+  //command app
+  print('Command pattern:');
+  CommandApp.handleVideo();
+  print('');
 }
