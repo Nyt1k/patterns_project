@@ -82,4 +82,9 @@ void main(List<String> arguments) {
   print('Mediator app:');
   MediatorApp.componentSelector();
   print('');
+
+  //memento app
+  print('Memento app:');
+  MementoApp.redactorStateSaver();
+  print('');
 }
