@@ -72,4 +72,9 @@ void main(List<String> arguments) {
   print('Command pattern:');
   CommandApp.handleVideo();
   print('');
+
+  //iterator app
+  print('Iterator pattern:');
+  IteratorApp().nodesIteration();
+  print('');
 }
