@@ -13,3 +13,4 @@ export 'proxy_pattern/proxy.dart';
 export 'chain_of_responsibility_pattern/chain_of_responsibility.dart';
 export 'command_pattern/command.dart';
 export 'iterator_pattern/iterator.dart';
+export 'mediator_pattern/mediator.dart';

@@ -77,4 +77,9 @@ void main(List<String> arguments) {
   print('Iterator pattern:');
   IteratorApp().nodesIteration();
   print('');
+
+  //mediator app
+  print('Mediator app:');
+  MediatorApp.componentSelector();
+  print('');
 }
