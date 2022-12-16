@@ -87,4 +87,9 @@ void main(List<String> arguments) {
   print('Memento app:');
   MementoApp.redactorStateSaver();
   print('');
+
+  //observer app
+  print('Observer app');
+  ObserverApp.sendLetters();
+  print('');
 }
