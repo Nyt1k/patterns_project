@@ -16,3 +16,4 @@ export 'iterator_pattern/iterator.dart';
 export 'mediator_pattern/mediator.dart';
 export 'memento_pattern/memento.dart';
 export 'observer_pattern/observer.dart';
+export 'state_pattern/state.dart';

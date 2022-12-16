@@ -89,7 +89,12 @@ void main(List<String> arguments) {
   print('');
 
   //observer app
-  print('Observer app');
+  print('Observer app:');
   ObserverApp.sendLetters();
+  print('');
+
+  //state app
+  print('State app:');
+  StateApp.deviceLockSystem();
   print('');
 }
