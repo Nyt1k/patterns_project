@@ -107,4 +107,9 @@ void main(List<String> arguments) {
   print('Template method app:');
   TemplateMethodApp.gameUnitsActions();
   print('');
+
+  //visitor app
+  print('Visitor app:');
+  VisitorApp.makeWebsite();
+  print('');
 }

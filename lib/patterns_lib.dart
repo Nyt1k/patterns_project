@@ -19,3 +19,4 @@ export 'observer_pattern/observer.dart';
 export 'state_pattern/state.dart';
 export 'strategy_pattern/strategy.dart';
 export 'template_method_pattern/template_method.dart';
+export 'visitor_pattern/visitor.dart';
