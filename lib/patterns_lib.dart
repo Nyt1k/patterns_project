@@ -18,3 +18,4 @@ export 'memento_pattern/memento.dart';
 export 'observer_pattern/observer.dart';
 export 'state_pattern/state.dart';
 export 'strategy_pattern/strategy.dart';
+export 'template_method_pattern/template_method.dart';

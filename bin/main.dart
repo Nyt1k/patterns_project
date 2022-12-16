@@ -102,4 +102,9 @@ void main(List<String> arguments) {
   print('Strategy app:');
   StrategyApp.getArea();
   print('');
+
+  // template app
+  print('Template method app:');
+  TemplateMethodApp.gameUnitsActions();
+  print('');
 }
