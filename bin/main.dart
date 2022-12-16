@@ -97,4 +97,9 @@ void main(List<String> arguments) {
   print('State app:');
   StateApp.deviceLockSystem();
   print('');
+
+  // strategy app
+  print('Strategy app:');
+  StrategyApp.getArea();
+  print('');
 }
