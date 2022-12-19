@@ -1,7 +1,7 @@
 import 'package:patterns_project/builder_pattern/models/models.dart';
 
 class Director {
-  void constructBench(Builder builder) {
+  void constructBenchOrControlPanel(Builder builder) {
     builder.reset();
     builder.setFunctionality(3);
     builder.setModules(2);
@@ -14,12 +14,12 @@ class BuilderApplication {
     final director = Director();
 
     BenchBuilder benchBuilder = BenchBuilder();
-    director.constructBench(benchBuilder);
-    Bench bench = benchBuilder.getResult;
+    director.constructBenchOrControlPanel(benchBuilder);
+   // Bench bench = benchBuilder.getResult;
 
     ControlPanelBuilder controlPanelBuilder = ControlPanelBuilder();
-    director.constructBench(controlPanelBuilder);
+    director.constructBenchOrControlPanel(controlPanelBuilder);
 
-    ControlPanel controlPanel = controlPanelBuilder.getResult;
+   // ControlPanel controlPanel = controlPanelBuilder.getResult;
   }
 }

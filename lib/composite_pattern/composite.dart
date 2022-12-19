@@ -18,9 +18,10 @@ class Group implements Entity {
 
   @override
   void doSomething() {
-    print('$event is saying something!');
-    _childEntities.forEach((element) => element.doSomething());
-    print('$event is stopped speaking\r\n');
+    print('$event are doing something when the lesson started');
+    for (var element in _childEntities) {
+      element.doSomething();
+    }
   }
 }
 
@@ -38,9 +39,9 @@ class Person implements Entity {
 
 class CompositeApp {
   static void makeGroups() {
-    var school = Group('Director');
-    var class1T = Group(' Class 1 Teach');
-    var class2T = Group(' Class 2 Teach');
+    var school = Group('School kids');
+    var class1E = Group(' Class 1');
+    var class2E = Group(' Class 2');
 
     var kid1_1 = Person('  Kid 1.1 listening a music');
     var kid1_2 = Person('  Kid 1.2 talking to Kid 1.3');
@@ -49,15 +50,15 @@ class CompositeApp {
     var kid2_1 = Person('  Kid 2.1 sleeping');
     var kid2_2 = Person('  Kid 2.2 listening the teacher');
 
-    class1T.addChild(kid1_1);
-    class1T.addChild(kid1_2);
-    class1T.addChild(kid1_3);
+    class1E.addChild(kid1_1);
+    class1E.addChild(kid1_2);
+    class1E.addChild(kid1_3);
 
-    class2T.addChild(kid2_1);
-    class2T.addChild(kid2_2);
+    class2E.addChild(kid2_1);
+    class2E.addChild(kid2_2);
 
-    school.addChild(class1T);
-    school.addChild(class2T);
+    school.addChild(class1E);
+    school.addChild(class2E);
 
     school.doSomething();
   }

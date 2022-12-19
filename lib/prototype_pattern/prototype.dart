@@ -17,7 +17,7 @@ class Frame {
   Frame clone() => copyWith(details: details, size: size);
 }
 
-class Prototype {
+class PrototypeApp {
   static void makeFrames() {
     final f1 = Frame(6, 240);
     final f2 = f1.clone();

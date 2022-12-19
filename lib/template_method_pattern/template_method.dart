@@ -1,28 +1,28 @@
 abstract class Soldier {
   String attack() => '  Attacking enemy!';
-  String userSpecialAttack();
+  String useSpecialAttack();
   String healYourself() => ' Start healing himself!';
 
   void makeRotation() {
     print(attack());
-    print(userSpecialAttack());
+    print(useSpecialAttack());
     print(healYourself());
   }
 }
 
 class Swordsman extends Soldier {
   @override
-  String userSpecialAttack() => ' Start using melee magic';
+  String useSpecialAttack() => ' Start using melee magic';
 }
 
 class Archer extends Soldier {
   @override
-  String userSpecialAttack() => ' Start shooting with a bow';
+  String useSpecialAttack() => ' Start shooting with a bow';
 }
 
 class Healer extends Soldier {
   @override
-  String userSpecialAttack() => ' Using magic on enemy';
+  String useSpecialAttack() => ' Using magic on enemy';
 
   @override
   String healYourself() => ' Start healing all allies';

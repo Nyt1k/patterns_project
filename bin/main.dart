@@ -19,7 +19,7 @@ void main(List<String> arguments) {
 
   // prototype app
   print('Prototype pattern:');
-  Prototype.makeFrames();
+  PrototypeApp.makeFrames();
   print('');
 
   // singleton app
@@ -39,7 +39,7 @@ void main(List<String> arguments) {
   print('');
 
   // composite app
-  print('Bridge pattern:');
+  print('Composite pattern:');
   CompositeApp.makeGroups();
   print('');
 

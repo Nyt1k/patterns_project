@@ -11,13 +11,14 @@ class AbstractFactory {
     switch (carType) {
       case CarType.bmw:
         car = BMW();
+
         break;
       case CarType.mercedes:
         car = Mercedes();
         break;
     }
 
-    car.startEngine();
-    car.stopCar();
+    car.startEngine().run();
+    car.stopCar().stop();
   }
 }

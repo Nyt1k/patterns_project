@@ -12,6 +12,6 @@ class CommandApp {
     videoPanel.control('prev');
     videoPanel.control('delete');
 
-    print('\r\nCommand logs:\r\n${videoPanel.commandHistory}');
+    print('Command logs:\r\n${videoPanel.commandHistory}');
   }
 }

@@ -50,7 +50,7 @@ class AveragePizza implements Pizza {
   }
 }
 
-class PizzaHut implements Pizza {
+class PizzaHutPizza implements Pizza {
   final Pizza _pizza = AveragePizza();
 
   @override

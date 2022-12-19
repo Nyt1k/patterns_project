@@ -65,11 +65,11 @@ class PauseCommand extends Command {
   }
 }
 
-class NextVideo extends Command {
+class NextCommand extends Command {
   @override
   String name = 'Next';
 
-  NextVideo(Video video) : super(video);
+  NextCommand(Video video) : super(video);
 
   @override
   void execute() {
@@ -77,11 +77,11 @@ class NextVideo extends Command {
   }
 }
 
-class PrevVideo extends Command {
+class PrevCommand extends Command {
   @override
   String name = 'Prev';
 
-  PrevVideo(Video video) : super(video);
+  PrevCommand(Video video) : super(video);
 
   @override
   void execute() {
@@ -90,7 +90,7 @@ class PrevVideo extends Command {
 }
 
 class CommandPanel {
-  Handler _handler = Handler();
+  final Handler _handler = Handler();
   final Video video;
 
   CommandPanel(this.video);
@@ -107,9 +107,9 @@ class CommandPanel {
       case 'pause':
         return _handler.execute(PauseCommand(video));
       case 'next':
-        return _handler.execute(NextVideo(video));
+        return _handler.execute(NextCommand(video));
       case 'prev':
-        return _handler.execute(PrevVideo(video));
+        return _handler.execute(PrevCommand(video));
     }
   }
 }

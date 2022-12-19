@@ -2,34 +2,34 @@ import 'package:patterns_project/abstract_factory_pattern/models/brake.dart';
 import 'package:patterns_project/abstract_factory_pattern/models/engine.dart';
 
 abstract class Car {
-  void startEngine();
-  void stopCar();
+  Engine startEngine();
+  Brake stopCar();
 }
 
 class BMW implements Car {
   @override
-  void startEngine() {
+  Engine startEngine() {
     final car = BMWEngine();
-    car.run();
+    return car;
   }
 
   @override
-  void stopCar() {
+  Brake stopCar() {
     final car = BMWBrake();
-    car.stop();
+    return car;
   }
 }
 
 class Mercedes implements Car {
    @override
-  void startEngine() {
+  Engine startEngine() {
     final car = MercedesEngine();
-    car.run();
+    return car;
   }
 
   @override
-  void stopCar() {
+  Brake stopCar() {
     final car = MercedesBrake();
-    car.stop();
+    return car;
   }
 }

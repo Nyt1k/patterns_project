@@ -23,8 +23,9 @@ class CachedMusicDatabaseProxy implements MusicDatabaseApi {
   void getSong() {
     if (_musicDatabaseService != null) {
       print('Getting song from local database...');
-    } else {
       _musicDatabaseService = MusicDatabaseService('$_cachedSong(from cache)');
+    } else {
+      _musicDatabaseService = MusicDatabaseService(_cachedSong);
     }
     _musicDatabaseService!.getSong();
   }

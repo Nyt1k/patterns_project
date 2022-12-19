@@ -4,11 +4,11 @@ abstract class Programmer {
   void addDataBase(DataBase dataBase);
 }
 
-abstract class WebSiteParts {
+abstract class WebSitePart {
   void makePart(Programmer programer);
 }
 
-class FrontEnd implements WebSiteParts {
+class FrontEnd implements WebSitePart {
   final String frameWork;
 
   FrontEnd(this.frameWork);
@@ -18,7 +18,7 @@ class FrontEnd implements WebSiteParts {
   }
 }
 
-class BackEnd implements WebSiteParts {
+class BackEnd implements WebSitePart {
   final String frameWork;
 
   BackEnd(this.frameWork);
@@ -28,7 +28,7 @@ class BackEnd implements WebSiteParts {
   }
 }
 
-class DataBase implements WebSiteParts {
+class DataBase implements WebSitePart {
   final String dataBase;
 
   DataBase(this.dataBase);
@@ -59,7 +59,7 @@ class VisitorApp {
   static void makeWebsite() {
     MEANProgrammer meanProgrammer = MEANProgrammer();
 
-    List<WebSiteParts> parts = [
+    List<WebSitePart> parts = [
       FrontEnd('JavaScript, AngularJS'),
       BackEnd('Node.js, Express'),
       DataBase('MongoDB'),
